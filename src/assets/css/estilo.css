@@ -1,0 +1,211 @@
+/*******************
+/*Top bar
+*******************/
+
+.topbar {
+    background: #fff;
+}
+.topbar .top-navbar .navbar-header .navbar-brand .light-logo {
+    display: none;
+}
+.topbar .top-navbar .navbar-nav > .nav-item > span {
+    color: #398bf7;
+}
+.topbar .navbar-light .navbar-nav .nav-item > a.nav-link {
+    color: #a6b7bf;
+}
+.topbar .navbar-light .navbar-nav .nav-item > a.nav-link:hover,
+.topbar .navbar-light .navbar-nav .nav-item > a.nav-link:focus {
+    color: #242a33 !important;
+}
+
+.logo-center .topbar .navbar-header {
+    text-align: center;
+    padding-left: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.logo-center .topbar .top-navbar .navbar-header .navbar-brand .dark-logo {
+    display: none;
+}
+
+.logo-center .topbar .top-navbar .navbar-header .navbar-brand .light-logo {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/*******************
+  /*General Elements
+  *******************/
+a {
+    color: #398bf7;
+}
+
+a.link:hover,
+a.link:focus {
+    color: #398bf7 !important;
+}
+
+.bg-theme {
+    background-color: #398bf7 !important;
+}
+
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+    background-color: #398bf7;
+    border-color: #398bf7;
+}
+
+.right-sidebar .rpanel-title {
+    background: #398bf7;
+}
+
+.stylish-table tbody tr:hover,
+.stylish-table tbody tr.active {
+    border-left: 4px solid #398bf7;
+}
+
+.text-themecolor {
+    color: #398bf7 !important;
+}
+
+.profile-tab li a.nav-link.active,
+.customtab li a.nav-link.active {
+    border-bottom: 2px solid #398bf7;
+    color: #398bf7;
+}
+
+.profile-tab li a.nav-link:hover,
+.customtab li a.nav-link:hover {
+    color: #398bf7;
+}
+
+/*******************
+  /*Buttons
+  *******************/
+.btn-themecolor,
+.btn-themecolor.disabled {
+    background: #398bf7;
+    color: #ffffff;
+    border: 1px solid #398bf7;
+}
+.btn-themecolor:hover,
+.btn-themecolor.disabled:hover {
+    background: #398bf7;
+    opacity: 0.7;
+    border: 1px solid #398bf7;
+}
+.btn-themecolor.active,
+.btn-themecolor:focus,
+.btn-themecolor.disabled.active,
+.btn-themecolor.disabled:focus {
+    background: #028ee1;
+}
+
+/*******************
+  /*sidebar navigation
+  *******************/
+.card-no-border .left-sidebar,
+.card-no-border .sidebar-nav {
+    background: #fdfdfd; /* fondo del sidebar */
+    xbackground-image: url('https://img.freepik.com/vector-gratis/elegante-fondo-blanco-lineas-brillantes_1017-17580.jpg?size=626&ext=jpg&ga=GA1.2.2050702949.1593817989');
+    xbackground-repeat: no-repeat;
+    xbackground-size: cover;
+}
+
+
+.mini-sidebar .sidebar-nav {
+    background: transparent;
+}
+
+@media(min-width: 768px) {
+    .mini-sidebar .sidebar-nav #sidebarnav > li > ul {
+        background: rgb(250, 250, 250); /* fondo menu mini */
+    }
+}
+
+.sidebar-nav {
+    background: #242a33;
+}
+
+.user-profile .profile-text a {
+    color: #687384 !important;
+}
+
+.card-no-border .sidebar-footer {
+    background: #1c2128;
+}
+
+.label-themecolor {
+    background: #398bf7;
+}
+
+.sidebar-nav > ul > li.active > a {
+    color: #687384; /* texto seleccion activa */
+}
+.sidebar-nav > ul > li.active > a i {
+    color: #687384; /*  icono seleccion activa */
+}
+
+.sidebar-nav ul li a.active,
+.sidebar-nav ul li a:hover {
+    color: #687384; /* hover del texto */
+    background: rgb(245, 245, 245);
+}
+.sidebar-nav ul li a.active i,
+.sidebar-nav ul li a:hover i {
+    color: black; /* hover del icono */
+}
+
+.sidebar-nav ul li.nav-small-cap {
+    color: #687384;
+}
+
+@media(min-width: 768px) {
+    .mini-sidebar .sidebar-nav #sidebarnav > li:hover > a {
+        background: rgb(250, 250, 250); /* seleccion menu mini */
+    }
+}
+
+/* -------------------------------------------------------------
+aside li a {
+    color: rgb(170, 170, 170) !important;
+}
+aside li a:hover {
+    color: whitesmoke !important;
+    background: rgb(73, 71, 71) !important;
+}
+*/
+
+/*
+aside,
+aside nav {
+    background: rgb(255, 255, 255) !important;
+}
+aside li a {
+    color: rgb(44, 44, 44) !important;
+}
+aside li a:hover {
+    background: rgb(241, 238, 238) !important;
+    color: rgb(122, 121, 121) !important;
+}
+*/
+
+/*
+aside,
+aside nav {
+    background: rgb(255, 255, 255) !important;
+}
+aside li a {
+    color: rgb(44, 44, 44) !important;
+}
+aside li a:hover {
+    color: whitesmoke !important;
+    background: rgb(150, 150, 150) !important;
+}
+*/
