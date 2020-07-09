@@ -1,4 +1,5 @@
-// Rutas
+
+// Rutas.
 import { RouterModule, Routes } from '@angular/router';
 // Paginas
 import { PagesComponent } from './pages/pages.component';

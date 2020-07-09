@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-breadcrumbs',
@@ -8,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BreadcrumbsComponent implements OnInit {
 
-  constructor() { }
+  @Input() tituloPagina: string = "Titulo de la página";
+
+  constructor() {
+    let tituloPagina = JSON.parse(localStorage.getItem('ls_tituloPagina'));
+  }
 
   ngOnInit(): void {
   }

@@ -8,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProgressComponent implements OnInit {
 
-  constructor() { }
+  progreso1: number = 5;
+  progreso2: number = 95;
+
+  constructor() {
+    document.getElementById('id_tituloPagina').innerHTML = 'Barra de progreso';
+  }
 
   ngOnInit(): void {
   }
