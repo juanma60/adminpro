@@ -1,21 +1,65 @@
+<!-- ============================================================== -->
 <aside class="left-sidebar">
-
     <!-- Sidebar scroll-->
     <div class="scroll-sidebar" style="background-image: '/src/assets/images/logo-tisis.img'">
-
         <!-- Sidebar navigation-->
         <nav class="sidebar-nav">
             <ul id="sidebarnav">
+                <li class="user-profile"> <a class="has-arrow waves-effect waves-dark" href="#"
+                        aria-expanded="false"><img src="../assets/images/users/profile.png" alt="user" /><span
+                            class="hide-menu">JuanMa </span></a>
+                    <ul aria-expanded="false" class="collapse">
+                        <li><a href="javascript:void()">Perfil </a></li>
+                        <li><a href="javascript:void()">Balance</a></li>
+                        <li><a href="javascript:void()">Inbox</a></li>
+                        <li><a routerLink="/account-settings" routerLinkActive="active">Configuración</a></li>
+                        <li><a routerLink="/login">Cerra sesión</a></li>
+                    </ul>
+                </li>
+                <li class="nav-devider"></li>
+                <li class="nav-small-cap">PERSONAL</li>
+
+                <li *ngFor="let menu of _sidebar.menu">
+                    <a class="has-arrow waves-effect waves-dark" aria-expanded="false"><i [class]="menu.icono">
+                        </i><span class="hide-menu">{{menu.titulo}}
+                            <span
+                                class="label label-rouded label-themecolor pull-right">{{menu.submenu.length}}</span></span>
+                    </a>
+                    <ul aria-expanded="false" class="collapse">
+                        <li *ngFor="let submenu of menu.submenu">
+                            <a [routerLink]=" submenu.url " routerLinkActive="active">{{submenu.titulo}} </a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+        <!-- End Sidebar navigation -->
+    </div>
+    <!-- End Sidebar scroll-->
+</aside>
+<!-- ============================================================== -->
+
+
+
+<!--
+<aside class="left-sidebar">
+
+    <div class="scroll-sidebar" style="background-image: '/src/assets/images/logo-tisis.img'">
+
+        <nav class="sidebar-nav">
+            <ul id="sidebarnav">
                 <li class="user-profile">
-                    <a class="has-arrow waves-effect waves-dark" href="#" aria-expanded="false"><img
-                            src="../assets/images/users/profile.png" alt="user" /><span class="hide-menu">JuanMa
+                    <a class="has-arrow waves-effect waves-dark collapse" href="#" aria-expanded="false"
+                        data-toggle="collapse">
+                        <img src="../assets/images/users/profile.png" alt="user" /><span class="hide-menu">JuanMa
                         </span></a>
                     <ul aria-expanded="false" class="collapse">
                         <li><a href="#/dashboard">Perfil </a></li>
                         <li><a href="#/progress">Balance</a></li>
                         <li><a href="#/graficas1">Inbox</a></li>
                         <li><a routerLink="/account-settings" routerLinkActive="active">Configurar</a></li>
-                        <li><a href="javascript:void()">Cerrar sesión</a></li>
+                        <li><a routerLink="/login">Cerrar sesión</a></li>
                     </ul>
                 </li>
                 <li class="nav-devider"></li>
@@ -33,10 +77,6 @@
                 </li>
             </ul>
         </nav>
-        <!-- End Sidebar navigation -->
     </div>
-    <!-- End Sidebar scroll-->
-
-
-
 </aside>
+-->
