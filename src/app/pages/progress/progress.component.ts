@@ -12,7 +12,7 @@ export class ProgressComponent implements OnInit {
   progreso2: number = 95;
 
   constructor() {
-    document.getElementById('id_tituloPagina').innerHTML = 'Barra de progreso';
+    //document.getElementById('id_tituloPagina').innerHTML = 'Barra de progreso';
   }
 
   ngOnInit(): void {

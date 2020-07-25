@@ -11,7 +11,7 @@ import { SettingsService } from '../../services/settings.service';
 export class AccountSettingsComponent implements OnInit {
 
   constructor(public _ajustes: SettingsService) {
-    document.getElementById('id_tituloPagina').innerHTML = "Configurar";
+    //document.getElementById('id_tituloPagina').innerHTML = "Configurar";
   }
 
   ngOnInit(): void {

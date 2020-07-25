@@ -39,7 +39,7 @@ export class Graficas1Component implements OnInit {
   };
 
   constructor() {
-    document.getElementById('id_tituloPagina').innerHTML = 'Graficas 1';
+    //document.getElementById('id_tituloPagina').innerHTML = 'Graficas 1';
   }
 
   ngOnInit(): void {

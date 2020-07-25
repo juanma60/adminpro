@@ -14,6 +14,7 @@ export class GraficoDonaComponent implements OnInit {
   @Input() public ChartLabels: string[] = [];
   @Input() public ChartData: number[] = [];
   @Input() public ChartType: string = '';
+
   // @Input() public doughnutChartLabels: Label[] = ['Ventas onLine', 'Venta Mostrador', 'Venta Correo'];
   // @Input() public doughnutChartData: MultiDataSet = [ [350, 450, 100], ];
   // @Input() public doughnutChartType: ChartType = 'doughnut';

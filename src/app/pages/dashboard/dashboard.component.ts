@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class DashboardComponent implements OnInit {
 
   constructor() {
-    document.getElementById('id_tituloPagina').innerHTML = 'Dashboard';
+    //document.getElementById('id_tituloPagina').innerHTML = 'Dashboard';
   }
 
   ngOnInit(): void { }
